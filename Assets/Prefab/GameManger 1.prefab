@@ -1,0 +1,132 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &9156530615116866208
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 9156530615116866210}
+  - component: {fileID: 9156530615116866209}
+  - component: {fileID: 9156530615116866220}
+  - component: {fileID: 9156530615116866211}
+  m_Layer: 0
+  m_Name: GameManger 1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &9156530615116866210
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9156530615116866208}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.0811872, y: -15, z: -2.0539725}
+  m_LocalScale: {x: 3000, y: 3, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &9156530615116866209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9156530615116866208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab9c4d9238c51574cbcd59d220241f34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 4946400692350691001, guid: 37b3bb8512794a24f8812907c3a5e6c5, type: 3}
+  circleController: {fileID: 0}
+  Stages: []
+  Restart_Button: {fileID: 6950590647681529895, guid: b0f4c75acf200814fb4fdd620898253f,
+    type: 3}
+  menuSet: {fileID: 5106517333961575221, guid: fdd1ff9fb3c25fe4d985567ffa44e094, type: 3}
+  talkManager: {fileID: 3950459170621447701, guid: 5839ffd9e2c46fc4785eedff7becb674,
+    type: 3}
+  talkPanel: {fileID: 8296005543413660809, guid: 84b0f2b8a9a5b2c41abd910578c71d74,
+    type: 3}
+  talkText: {fileID: 6624369065642698548, guid: e9e7f5a7dc9648b498cff9cc4dd35351,
+    type: 3}
+  portraitImg: {fileID: 8870551612665499739, guid: 80e0c22ec0620f441bf11e604cf11c05,
+    type: 3}
+  storePanel: {fileID: 463586893348352940, guid: e02b19e44a95a674a8568955a956f577,
+    type: 3}
+  storeBuyText: {fileID: 9156530615116866220}
+  playerStatPanel: {fileID: 840272273792647453, guid: 6f063ed92266346459808cff949f1762,
+    type: 3}
+  playerStatText: {fileID: 411381220144313708, guid: a92f0501b8d56a3438ae8102d1c60e00,
+    type: 3}
+  HelpPanel: {fileID: 4376665347810110642, guid: 15ad857beec92504fb33d473acb70505,
+    type: 3}
+  playerLevelText: {fileID: 2663333656460520470, guid: b36013fdffe0088489a9dd52cd0b80a9,
+    type: 3}
+  playerHpText: {fileID: 4766294074750267694, guid: a8a6c09ecba438f4abda17b1a9b2f38d,
+    type: 3}
+  barricadeobj: {fileID: 0}
+  PortalMessagePanel: {fileID: 0}
+  isSlow: 0
+  scanObject: {fileID: 0}
+  isTalkPanelActive: 0
+  isPlayerStatPanel: 0
+  isHelpPanel: 0
+  talkIndex: 0
+  AttackPoint_Price: 10
+  HpPoint_Price: 10
+  CircleSpeed_Price: 100
+  CircleSize_Price: 100
+--- !u!114 &9156530615116866220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9156530615116866208}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7c1b89c57893c44898762d4a950724d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BuyAtkText: {fileID: 8445684333961970522, guid: 36335813fe5e19a4abb9552833e0ea69,
+    type: 3}
+  BuyHpText: {fileID: 2966358602396803700, guid: 2cfd47578e802904e87db1fef15919a3,
+    type: 3}
+  BuyCircleSpeedText: {fileID: 0}
+  BuyCircleSizeText: {fileID: 0}
+  gameManger: {fileID: 9156530615116866209}
+--- !u!61 &9156530615116866211
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9156530615116866208}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0

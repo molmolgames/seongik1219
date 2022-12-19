@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3862605169670536219
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3862605169670536217}
+  - component: {fileID: 3862605169670536218}
+  - component: {fileID: 3862605169670536215}
+  - component: {fileID: 3862605169670536216}
+  m_Layer: 0
+  m_Name: GameManger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &3862605169670536217
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3862605169670536219}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.0811872, y: -25, z: -2.0539725}
+  m_LocalScale: {x: 3000, y: 3, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3862605169670536218
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3862605169670536219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab9c4d9238c51574cbcd59d220241f34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1168221146542169375, guid: 4b6b93d36bd4b0e449a9c34911eab8cb, type: 3}
+  circleController: {fileID: 3640932151258438995, guid: 687e7ee6364110e429f83b194888ca8c,
+    type: 3}
+  Stages: []
+  Restart_Button: {fileID: 1992756738251787688, guid: 1f75104b4827e2049868c0eac98f8a56,
+    type: 3}
+  menuSet: {fileID: 5210272438646895311, guid: 0f6f7797f31425b4b9de5f82c0a4d77b, type: 3}
+  talkManager: {fileID: 6078863140928986248, guid: 55b275ce3463c6744ad2ae37c4ed3ec2,
+    type: 3}
+  talkPanel: {fileID: 3695780469113776158, guid: 2f4442ae99d96804b98dd2b04e322e38,
+    type: 3}
+  talkText: {fileID: 7909242386025454034, guid: 4f5f6b1a6a9941d41a7a53375efe5fdb,
+    type: 3}
+  portraitImg: {fileID: 4355888032811907992, guid: 88fc63192827f164c8bf623e10d1769b,
+    type: 3}
+  storePanel: {fileID: 2621044394901940216, guid: c87a37bb7cafe654197d72d7a7276698,
+    type: 3}
+  storeBuyText: {fileID: 3862605169670536215}
+  playerStatPanel: {fileID: 6378955241195549047, guid: af0d29209feb2c646956238a60c29c90,
+    type: 3}
+  playerStatText: {fileID: 1168221146542169373, guid: 4b6b93d36bd4b0e449a9c34911eab8cb,
+    type: 3}
+  HelpPanel: {fileID: 738777375949965878, guid: e72d47775f78abe41b200f7d44620264,
+    type: 3}
+  playerLevelText: {fileID: 3254917802178253326, guid: 095b567fa1314774fbf95450b9a9eb3f,
+    type: 3}
+  playerHpText: {fileID: 8003648069743877479, guid: cf4a2195b81a2a14284eaabcb7803b72,
+    type: 3}
+  barricadeobj: {fileID: 0}
+  PortalMessagePanel: {fileID: 5809704615041136779, guid: e89334d51d4ee8a479a907ea7e6323c3,
+    type: 3}
+  isSlow: 0
+  scanObject: {fileID: 0}
+  isTalkPanelActive: 0
+  isPlayerStatPanel: 0
+  isHelpPanel: 0
+  talkIndex: 0
+  AttackPoint_Price: 10
+  HpPoint_Price: 10
+  CircleSpeed_Price: 100
+  CircleSize_Price: 100
+--- !u!114 &3862605169670536215
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3862605169670536219}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7c1b89c57893c44898762d4a950724d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BuyAtkText: {fileID: 8401974573287220982, guid: e0cc7b873e1247947b2158d552dbf53a,
+    type: 3}
+  BuyHpText: {fileID: 8978002761514972907, guid: e8aecf5449efbc14d8413ce567d599fc,
+    type: 3}
+  BuyCircleSpeedText: {fileID: 6766799035457879947, guid: 988b944e48105b04e898aaf51b3b4b55,
+    type: 3}
+  BuyCircleSizeText: {fileID: 4186770920118707534, guid: fe11b5cd00cb8874b94fe8af9a691e85,
+    type: 3}
+  gameManger: {fileID: 3862605169670536218}
+--- !u!61 &3862605169670536216
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3862605169670536219}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1}
+  m_EdgeRadius: 0
